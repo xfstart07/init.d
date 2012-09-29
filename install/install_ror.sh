@@ -5,7 +5,7 @@
 # License: MIT 
 
 ##
-## 根据修改
+## 修改
 ##
 
 RUBY_VERSION="1.9.3"
