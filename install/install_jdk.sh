@@ -4,7 +4,7 @@
 
 ## Copy JDK to /usr/lib/jvm
 echo "......copy jdk to /usr/lib/jvm......"
-sudo cp Downloads/jdk-6u35-linux-x64.bin /usr/lib/jvm
+sudo cp jdk-6u35-linux-x64.bin /usr/lib/jvm
 echo "......Done......"
 
 ## Install JDK
@@ -19,7 +19,17 @@ echo "......Done......"
 sudo ln -sf /usr/lib/jvm/jdk1.6.0_35 /usr/jdk
 
 ## deploy system setting
-echo 'export JAVA_HOME=/usr/jdk' /etc/profile
+
+#####################################################################
+# export JAVA_HOME=/usr/jdk
+# export PATH=$JAVA_HOME/bin:$PATH
+# export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+#####################################################################
+
+echo "export JAVA_HOME=/usr/jdk /etc/profile"
+source /etc/profile
+echo "'export JAVA_HOME=/usr/jdk' ~/.bashrc"
+source ~/.bashrc
 
 ## setting jdk version
 echo "......Setting JDK Version......"
@@ -29,4 +39,6 @@ echo "######################################"
 sudo update-alternatives --install /usr/bin/java java /usr/jdk/bin/java 400
 sudo update-alternatives --install /usr/bin/javac javac /usr/jdk/bin/javac 400
 sudo update-alternatives --config java
-echo "......Done......"
+echo "######################################"
+echo "###### Install Done JDK ######"
+echo "######################################"
