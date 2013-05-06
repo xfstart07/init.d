@@ -1,2 +1,1 @@
-Linux 常用配置、安装sh、工具
-
+Ubuntu Server 12.04
