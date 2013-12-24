@@ -6,9 +6,13 @@ sudo apt-get update
 sudo apt-get install mongodb-10gen
 
 # set dbpath and mongodb.log
+echo "set dppath"
+
 sudo mkdir /data/
 sudo mkdir /data/mongodb/
 sudo mongod --dbpath /data/mongodb/
 sudo mongod --fork --logpath /var/log/mongodb.log
+
+echo "restart mongodb"
 sudo service mongodb restart
 
