@@ -5,3 +5,10 @@ echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' | 
 sudo apt-get update
 sudo apt-get install mongodb-10gen
 
+# set dbpath and mongodb.log
+sudo mkdir /data/
+sudo mkdir /data/mongodb/
+sudo mongod --dbpath /data/mongodb/
+sudo mongod --fork --logpath /var/log/mongodb.log
+sudo service mongodb restart
+
