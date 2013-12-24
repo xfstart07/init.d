@@ -7,8 +7,9 @@ wget -N http://nodejs.org/dist/v$VERSION/node-v$VERSION.tar.gz
 tar zxf node-v$VERSION.tar.gz
 cd node-v$VERSION
 ./configure
+make && sudo make install
+cd ..
 rm node-v$VERSION.tar.gz
 rm -R node-v$VERSION
-make && sudo make install
 echo "Node.js install done."
 echo "------------------------------------------------------------------------"
