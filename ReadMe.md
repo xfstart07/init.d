@@ -1,1 +1,1 @@
-Ubuntu Server 12.04
+Ubuntu Server 14.04
