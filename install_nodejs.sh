@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-VERSION="0.12.0"
+VERSION="v4.2.3"
 echo "------------------------------------------------------------------------"
 echo "Now install Node.js $VERSION..."
 wget -N http://nodejs.org/dist/v$VERSION/node-v$VERSION.tar.gz
