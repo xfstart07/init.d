@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 DIR=`pwd`
-VERSION='1.8.0'
+VERSION='1.10.0'
 cd /tmp
 curl -O http://nginx.org/download/nginx-$VERSION.tar.gz
 tar zxf nginx-$VERSION.tar.gz
