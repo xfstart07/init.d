@@ -1,4 +1,4 @@
-VERSION="3.0.7"
+VERSION="3.2.6"
 echo "-----------------------------------------------------------------------"
 echo "Now will install Redis $VERSION..."
 cd /tmp
